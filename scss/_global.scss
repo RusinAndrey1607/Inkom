@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    padding-right: 0;
+    height: 100%;
+    font-family: "MuseoModerno", "cursive";
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    &::-webkit-scrollbar {
+        z-index: 10;
+        width: 12px;
+        height: 0;
+        background: rgba(#fff, 0.5);
+        mix-blend-mode: normal;
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background-color: rgba(#CFA55B, 1);
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(#CFA55B, 0.8);
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 900;
+    color: #ffffff;
+    &--yellow {
+        color: #cfa55b;
+    }
+    &--black {
+        color: #424242;
+    }
+    @media(max-width: 820px) {
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 700;
+    }
+    @media(max-width: 620px) {
+        font-size: 28px;
+        line-height: 34px;
+    }
+}
+
+.btn {
+    text-align: center;
+    display: inline-block;
+    background: #cfa55b;
+    border: 2px solid #cfa55b;
+    box-shadow: 0px 20px 40px rgba(207, 165, 91, 0.4);
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "MuseoModerno", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    transition: all 0.5s;
+    &:hover {
+        background-color: transparent;
+        color: #cfa55b;
+    }
+    &--clear {
+        color: #CFA55B;
+        background-color: transparent;
+        border: 2px solid #CFA55B;
+        &:hover {
+            background-color: #CFA55B;
+            color: #fff;
+        }
+    }
+    &--transparent {
+        color: #ffc256;
+        background-color: transparent;
+        // filter: drop-shadow(0px 0px 30px #FFC256);
+        border: 2px solid #ffc256;
+        &:hover {
+            background-color: #ffc256;
+            color: #ffffff;
+        }
+    }
+}
+
+.body.active {
+    overflow-y: hidden;
+    padding-right: 12px;
+    @media (max-width: 820px) {
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,52 @@
+.footer {
+    padding-top: 51px;
+    padding-bottom: 67px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__location {
+        font-weight: 500;
+        font-family: "MuseoModerno", sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+        color: #424242;
+        position: relative;
+        padding-left: 57px;
+        &::before {
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            display: block;
+            position: absolute;
+            content: '';
+            background-image: url(../images/location.svg);
+            background-repeat: no-repeat;
+            width: 39px;
+            height: 39px;
+        }
+    }
+    &__phone {
+        font-family: "MuseoModerno", sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #424242;
+        transition: all .5s;
+        &:hover {
+            color: #CFA55B;
+        }
+    }
+    @media(max-width: 550px) {
+        &__inner {
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+        &__location {
+            padding-left: 43px;
+            margin-bottom: 20px;
+        }
+    }
+}

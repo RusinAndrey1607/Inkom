@@ -1,0 +1,187 @@
+.catalog {
+    padding-top: 80px;
+    padding-bottom: 95px;
+    &__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__buttons {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 61px;
+    }
+    &__btn {
+        cursor: pointer;
+        max-height: 65px;
+        padding: 21px 35px;
+        &.active {
+            background-color: #CFA55B;
+            color: #fff;
+        }
+        &:not(:last-child) {
+            margin-right: 38px;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__img-wrapper {
+        max-height: 584px;
+        max-width: 1100px;
+        margin-bottom: 32px;
+    }
+    &__square-title {
+        margin-bottom: 2px;
+        font-family: "MuseoModerno", sans-serif;
+        font-size: 30px;
+        line-height: 36px;
+        color: #CFA55B;
+        &--center {
+            text-align: center;
+        }
+    }
+    &__square-text {
+        text-align: center;
+        margin-bottom: 47px;
+    }
+    &__square-items {
+        width: 100%;
+        max-width: 1031px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-text {
+        font-family: "MuseoModerno", sans-serif;
+        font-size: 24px;
+        line-height: 29px;
+        color: #8C8C8C;
+    }
+    &__slider {
+        position: relative;
+    }
+    &__slider-btn {
+        cursor: pointer;
+        background: transparent;
+        opacity: 0.5;
+        border: none;
+        outline: none;
+        z-index: 5;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .5s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__prev {
+        left: 0;
+    }
+    &__next {
+        right: 0;
+    }
+    @media(max-width: 1230px) {
+        &__img-wrapper {
+            max-width: 900px;
+            max-height: 80%;
+        }
+    }
+    @media(max-width: 1130px) {
+        &__btn {
+            margin-bottom: 40px;
+        }
+        &__img-wrapper {
+            max-width: 700px;
+            max-height: 80%;
+        }
+        &__square-title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__inner {
+            padding: 0 50px;
+        }
+    }
+    @media(max-width: 940px) {
+        &__img-wrapper {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        &__square-title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__slider-btn {
+            svg {
+                width: 28px;
+            }
+        }
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__btn {
+            display: block;
+            width: 70%;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+    @media(max-width: 720px) {
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__img-wrapper {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        &__square-title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__inner {
+            padding: 0 30px;
+        }
+        &__slider-btn {
+            svg {
+                width: 20px;
+            }
+        }
+        &__square-item {
+            margin-bottom: 20px;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+        &__square-items {
+            flex-wrap: wrap;
+        }
+    }
+    @media(max-width: 620px) {
+        &__btn {
+            padding: 21px 10px;
+            display: block;
+            width: 100%;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+    @media(max-width: 470px) {
+        &__square-title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
