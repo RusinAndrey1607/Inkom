@@ -73,11 +73,12 @@
         }
     }
     &__btn {
-        font-family: 'Roboto';
-        font-weight: 700;
-        padding: 31px 74px;
         max-width: 420px;
         max-height: 85px;
+        display: inline-block;
+        font-family: 'Roboto';
+        font-weight: 700;
+        padding: 31px 68px;
     }
     &__box-title {
         font-family: "MuseoModerno", sans-serif;
