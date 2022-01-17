@@ -75,10 +75,12 @@
     &__btn {
         max-width: 420px;
         max-height: 85px;
+        width: 100%;
         display: inline-block;
         font-family: 'Roboto';
         font-weight: 700;
-        padding: 31px 68px;
+        padding: 31px 0;
+        text-align: center;
     }
     &__box-title {
         font-family: "MuseoModerno", sans-serif;
